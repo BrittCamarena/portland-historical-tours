@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!--
+File Name: contact.html
+Date: 11/13/2019
+Programmer: Brittany Camarena
+-->
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact - Portland Historical Tours</title>
+		<link rel="stylesheet" type="text/css" href="css/tours.css">
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CRoboto%7CRoboto+Condensed&display=swap" rel="stylesheet">
+		<script src="script/script.js"></script>
+    </head>
+    
+    <body>
+		<div id="wrapper">
+			<header class="heroContact">			
+				<nav>
+					<div id="navWrap">
+						<a href="index.html"><div id="navLogo"></div></a>
+						
+						<div id="navIcon" class="showHide">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+						</div>
+						
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="tours.html">TOURS</a></li>
+							<li><a href="booking.html">BOOK RESERVATION</a></li>
+							<li><a href="about.html">ABOUT US</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+					</div>
+				</nav>
+				
+				<div id="titleArea">
+					<h1 class="titleShadow">Contact Us</h1>
+				</div>
+			</header>
+			
+			<main>
+				<h2>Contact Form</h2>
+				<p class="centerText">Required information is marked with an asterisk (*).</p>
+				
+				<form id="contactForm" method="post" action="https://webdevbasics.net/scripts/demo.php">
+					<label for="myName">* Full Name:</label>
+					<input type="text" id="myName" name="myName" required>
+					
+					<label for="myEmail">* E-mail:</label>
+					<input type="email" id="myEmail" name="myEmail" required>
+					
+					<label for="mySubject">* Subject:</label>
+					<input type="text" id="mySubject" name="mySubject" required>
+					
+					<label for="myMessage">* Message:</label>
+					<textarea id="myMessage" name="myMessage" required></textarea>
+					
+					<input type="submit" id="mySubmit" value="Send">					
+				</form>
+				
+				<h3>Company Address:</h3>
+				<div id="addressBox">
+					<p class="leftText">
+						Portland Historical Tours<br>
+						1200 NW Naito Parkway<br>
+						Portland, OR 97209<br>
+						503-555-1234
+					</p>
+				</div>
+			</main>
+			
+			<footer>			
+				<span class="copyright">Copyright © Portland Historical Tours ♦ <a href="mailto:brittany.camarena@pcc.edu">brittany.camarena@pcc.edu</a></span>
+			</footer>
+		</div>
+    </body>  
+    
+</html>

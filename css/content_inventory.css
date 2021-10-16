@@ -1,0 +1,33 @@
+/*
+File Name: content_inventory.css
+Date: 10/10/2019
+Programmer: Brittany Camarena
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+	font-family: "Lato", sans-serif;
+	color: #262626;
+}
+
+h2 {
+	color: #42536b;
+}
+
+li {
+	margin: 10px;
+}
+
+.a {
+	list-style-type: none;
+	border: 1px solid #e3e3e3;
+	border-radius: .7em;
+	margin: 1em;
+	padding: .2em;
+}
+
+#wrapper {
+	width: 60em;
+	margin: 0 auto;
+}

@@ -1,0 +1,559 @@
+/*
+File Name: tours.css
+Date: 11/13/2019
+Programmer: Brittany Camarena
+*/
+
+/* BEGIN RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, main, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: #262626;
+	margin: 0;
+	background-color: #e9e9e9;
+}
+
+h1 {
+	font-family: "Kaushan Script", serif;
+	color: #fff;
+	font-size: 5.5em;
+	animation: fadeIn 1.5s;
+}
+
+h2 {
+	font-size: 2.4em;
+	text-align: center;
+	margin: 1.2em;
+}
+
+h3 {
+	font-size: 1.7em;
+	text-align: center;
+	margin: 1.5em;
+}
+
+p {
+	margin: 1em;
+	line-height: 1.5em;
+}
+
+ul {
+	list-style: disc;
+	margin: 1em 1em 1em 3em;
+}
+
+li {
+	margin: 1em;
+}
+
+a, a:link, a:hover, a:active, a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+table, tr, th, td {
+	border: 1px solid #a4b7b9;
+	padding: .7em;
+	text-align: center;
+}
+
+table {
+	font-size: .95em;
+	margin: 1em;
+	width: 100%;
+	max-width: 30em;
+}
+
+th {
+	font-weight: bold;
+	background-color: #e9eff0;
+}
+
+form {
+	margin: 2em auto 0 auto;
+	max-width: 36em;
+}
+
+label {
+	display: block;
+	float: left;
+	width: 10em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	line-height: normal;
+}
+
+input, select, textarea {
+	display: block;
+	margin-bottom: 1em;
+	padding: 1em;
+	width: 100%;
+	max-width: 26em;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+input[type=submit] {
+	margin: 0 auto;
+	width: 8em;
+}
+
+nav {
+	font-family: "Roboto Condensed", sans-serif;
+	color: #fff;
+	height: 3.5em;
+	font-size: 1.3em;
+	text-align: center;
+	position: relative;
+	margin-bottom: 1.2em;
+}
+
+nav ul {
+	margin: 0 4em;
+	padding: .5em;
+	z-index: 1;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 1em;	
+	margin-right: 1em;	
+}
+
+nav a:link {
+	text-decoration: none;
+	border-bottom: .15em solid rgba(0,0,0,0);
+	transition: border .3s ease-in;
+}
+
+nav a:hover {
+	border-bottom: .14em solid;
+}
+
+header {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 32em;
+	position: relative;
+	animation: fadeIn .5s;
+}
+
+main {	
+	overflow: hidden;
+	background-color: #fff;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 3em;
+}
+
+main a:link {	
+	color: #00ae17;
+}
+
+main a:visited {	
+	color: #d99c01;
+}
+
+main a:hover {	
+	color: #00660e;
+	text-decoration: underline;
+}
+
+footer {
+	position: relative;
+	color: #fff;
+	height: 4em;
+	overflow: hidden;
+	text-align: center;
+	background-color: #13200e;
+}
+
+.placeholder {
+	border: 1px solid black;
+	margin-top: 2em;
+}
+
+.showHide {
+	display: none;
+}
+
+.bar {
+	width: 32px;
+	height: 4px;
+	background-color: #fff;
+	margin: 6px 0;
+}
+
+.navMobile {
+	display: block;
+	position: absolute;
+	right: 0;
+	margin: 0;
+	margin-top: -10px;
+	padding-right: 1.5em;
+	padding-top: 1em;
+	width: 100%;
+	height: 350px;
+	list-style: none;
+	font-size: 1.5em;
+	text-align: right;
+	background-color: rgba(0,0,0,.9);
+}
+
+.heroHome {
+	background-image: url("../images/hero2.jpg");
+}
+
+.heroTours {
+	background-image: url("../images/hero3.jpg");
+}
+
+.heroBooking {
+	background-image: url("../images/hero4.jpg");
+}
+
+.heroAbout {
+	background-image: url("../images/hero1.jpg");
+}
+
+.heroContact {
+	background-image: url("../images/hero6.jpg");
+}
+
+.titleShadow {
+	text-shadow: 0px 0px 40px #000;
+}
+
+.infoBox {
+	max-width: 58em;
+	min-width: 16em;
+	padding: 1em;
+	background-color: #f7f7f7;
+	margin: 2em auto 0 auto;
+	box-shadow: inset 0 3em 0 0 #5ba8ae;
+}
+
+.infoBox h3 {
+	font-size: 1.2em;
+	color: #ffffff;
+	margin: 0;
+}
+
+.infoBox ul {
+	list-style: square;
+	margin-top: 2.5em;
+}
+
+.tourCont {
+	position: relative;
+	padding: 1em;
+	padding-left: 32em;
+}
+
+.tourIMG {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	margin-top: 2em;
+	width: 500px;
+}
+
+.signUp {
+	margin-left: 1em;
+}
+
+.commentLabel {
+	float: none;
+	width: 100%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+}
+
+.centerText {
+	text-align: center;
+}
+
+.leftText {
+	text-align: left;
+}
+
+.tourQuote {
+	color: #3d7175;
+	font-style: italic;
+}
+
+.footerContent {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 1em;
+}
+
+.copyright {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	font-size: .8em;
+	margin: 0;
+}
+
+.copyright a:link {
+	color: #8ae189;
+}
+
+.copyright a:hover {
+	color: #8ae189;
+	text-decoration: underline;
+}
+
+#wrapper {
+	width: 90%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+#navWrap {
+	max-width: 50em;
+	margin: 0 auto;
+	margin-top: 10px;
+	vertical-align: middle;
+}
+
+#navLogo {
+	position: absolute;
+	height: 73px;
+	width: 73px;
+	margin: 0 1em 0 1em;
+	background-image: url("../images/logo_small.png");
+	background-position: center center;
+	background-size: 73px;
+	background-repeat: no-repeat;
+	animation: fadeIn .8s;
+	z-index: 2;
+}
+
+#navIcon {
+	position: absolute;
+	right: 0;
+	margin: 0 1em;
+	cursor: pointer;
+	z-index: 2;
+}
+
+#titleArea {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+#headerLogo {
+	animation: fadeIn 1s;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 220px;
+}
+
+#bookingForm textarea {
+	max-width: 100%;
+}
+
+#contactForm input[type=submit] {
+	margin-left: 10em;
+}
+
+#addressBox {
+	width: 14em;
+	margin: 0 auto;
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+	0% { opacity: 0; top: 1em; }
+	50% { opacity: 0; top: .5em;}
+	100% { opacity: 1; top: 0; }
+}
+
+@media only screen and (max-width: 1024px) {
+	
+	h1 {
+		font-size: 4.5em;
+	}
+	
+	header {
+		height: 350px;
+	}
+	
+	nav ul {
+		margin: 0 2em;
+	}
+		
+	nav ul li {
+		margin: .5em;
+	}
+	
+	table {
+		font-size: .9em;
+	}
+	
+	.tourCont {
+		padding-left: 24em;
+		padding-right: 0;
+		margin: 0;
+	}
+	
+	.tourIMG {
+		width: 380px;
+	}
+	
+	#wrapper {
+		width: auto;
+		margin: 0;
+	}
+	
+	#headerLogo {
+		width: 160px;
+		margin: 0;
+		margin-top: 2em;
+	}
+	
+}
+
+@media only all and (max-width: 786px) {
+	
+	h1 {
+		margin: 0;
+	}
+	
+	table {
+		max-width: 100%;
+		margin: 1em auto;
+	}
+	
+	input, select {
+		max-width: 100%;
+	}
+	
+	nav ul {
+		display: none;
+	}
+	
+	nav ul li {
+		display: block;
+	}
+	
+	.showHide {
+		display: block;
+	}
+	
+	.infoBox ul {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	
+	.tourCont {
+		padding: 0;
+		margin: 0;
+	}
+	
+	.tourIMG {
+		display: none;
+	}
+	
+	#navLogo {
+		margin: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	
+	#titleArea {
+		top: 50%;
+	}
+	
+	#headerLogo {
+		display: none;
+	}
+	
+	#contactForm textarea {
+		max-width: 100%;
+	}
+	
+	#contactForm input[type=submit] {
+		margin: 0 auto;
+	}
+	
+}
